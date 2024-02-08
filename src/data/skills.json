@@ -1,0 +1,28 @@
+{
+    "entries": [
+        {
+            "skill": "Java/Javascript",
+            "percent": "100"
+        },
+        {
+            "skill": "Python",
+            "percent": "95"
+        },
+        {
+            "skill": "HTML & CSS",
+            "percent": "100"
+        },
+        {
+            "skill": "mySQL/SQL",
+            "percent": "56"
+        },
+        {
+            "skill": "c/c++/c#",
+            "percent": "98"
+        },
+        {
+            "skill": "Rust",
+            "percent": "66"
+        }
+    ]
+}

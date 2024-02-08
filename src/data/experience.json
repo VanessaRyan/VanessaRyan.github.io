@@ -1,0 +1,28 @@
+{
+    "entries": [
+        {
+            "title": "Developer & Designer",
+            "company": "Poisera",
+            "years": "May 2023 - Aug 2023",
+            "description": "Here I worked with a team of developers & designers to launch a health & wellness app for parenthood, using a Rust backend and a Python frontend. I aided the company in their 2023 V0 launch and their re-branding to Moment for Parents.",
+            "url": "https://www.poisera.com/",
+            "url-title": "Poisera's Website"
+        },
+        {
+            "title": "Developer",
+            "company": "Atomic Object",
+            "years": "May 2022 - Aug 2022",
+            "description": "Looking for a new challenge, I joined Atomic Object. My role was to join a team of developers and designers in effort to replace a client's entire website tech-stack.",
+            "url": "https://atomicobject.com/services/web-app-development",
+            "url-title": "Atomic's Program"
+        },
+        {
+            "title": "Computer Science Summer Institute Intern",
+            "company": "Google",
+            "years": "Jun 2020",
+            "description": "The spark in my journey to using code and graphics together. After this internship, I was convinced that not only was I good at coding, I could marry it with my passion for art.",
+            "url": "https://buildyourfuture.withgoogle.com/programs/computer-science-summer-institute",
+            "url-title": "The CSSI Program"
+        }
+    ]
+}
