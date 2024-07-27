@@ -39,11 +39,36 @@
       .simplebar-content-wrapper {
         overflow: auto;
       }
+      #project1.hidden,
+      #project2.hidden,
+      #project3.hidden,
+      #project4.hidden,
+      #project5.hidden,
+      #project6.hidden,
+      #project7.hidden,
+      #project8.hidden,
+      #project9.hidden {
+        display: none !important;
+      }
     </style>
   </noscript>
 
+  <style>
+    #project1.hidden,
+    #project2.hidden,
+    #project3.hidden,
+    #project4.hidden,
+    #project5.hidden,
+    #project6.hidden,
+    #project7.hidden,
+    #project8.hidden,
+    #project9.hidden {
+      display: none !important;
+    }
+  </style>
+
   <!-- Page Title -->
-  <title>Bootstrap 5 HTML Template</title>
+  <title>Vanessa Ryan's Portfolio</title>
 
 </head>
 <body class="">
@@ -93,147 +118,30 @@
             <!-- Page Content Goes Here -->
 
             <h1 class="display-3 mb-5"  data-scroll data-scroll-speed="6" data-scroll-position="top">My Work</h1>
+            <!-- <p data-scroll data-scroll-speed="8" data-scroll-position="top" class="lead typed-elem">All the following work was completed in the the 2023 school year</p> -->
+            
+            <!-- <p class="subtitle-sm" data-scroll data-scroll-speed="7" data-scroll-position="top">Filter On:</p>
+
+            <div id="buttons-container" data-scroll data-scroll-speed="7" data-scroll-position="top">
+                <a class="link-body" onclick="filterProjects('all')">All</a>
+                <a class="link-body" onclick="filterProjects('AI')">AI</a>
+                <a class="link-body" onclick="filterProjects('Videogame')">Videogame</a>
+                <a class="link-body" onclick="filterProjects('Development')">Development</a>
+                <a class="link-body" onclick="filterProjects('UX/UI')">UX/UI</a>
+                <a class="link-body" onclick="filterProjects('ComputerSecurity')">Computer Security</a>
+                <a class="link-body" onclick="filterProjects('Design')">Design</a>
+            </div> -->
 
             <div class="row g-8" data-scroll
-            data-scroll-position="bottom" >
-                    <!-- Single Work-->
-                    <div 
+            data-scroll-position="bottom" id="projects-container">
+
+
+                    <!-- Single Work - Poisera-->
+                    <!-- <div 
                     data-scroll
                     data-scroll-position="bottom" 
-                        class="col-12 col-md-6 fade-in-left"
-                    >
-                        <div class="position-relative">
-                            <a class="link-cover" href="./work-single.html">
-                                <picture>
-                                    <img class="img-fluid" src="./assets/images/project-listing-1.jpg" alt="">
-                                </picture>
-                            </a>
-                            <p class="subtitle-xs mb-0 mt-4"><span class='me-2'>Ecommerce</span> &middot; <span class='ms-2'>Shopify</span></p>
-                            <p class="fw-bolder lead mb-3 mt-2">Shopify Fashion Store</p>
-                            <p class="small text-muted mb-2">Design and development of a custom Shopify Ecommerce platform for a fashion retailer.</p>
-                            <a class="link-body" href="./work-single.html">View Project</a>
-                        </div>
-                    </div>
-                    <!-- / Single Work -->
-                    <!-- Single Work-->
-                    <div 
-                    data-scroll
-                    data-scroll-position="bottom" 
-                        class="col-12 col-md-6 fade-in-right"
-                    >
-                        <div class="position-relative">
-                            <a class="link-cover" href="./work-single.html">
-                                <picture>
-                                    <img class="img-fluid" src="./assets/images/project-listing-2.jpg" alt="">
-                                </picture>
-                            </a>
-                            <p class="subtitle-xs mb-0 mt-4"><span class='me-2'>Ecommerce</span> &middot; <span class='ms-2'>Magento</span></p>
-                            <p class="fw-bolder lead mb-3 mt-2">Magento Furniture Store</p>
-                            <p class="small text-muted mb-2">Design and development of a custom Magento Ecommerce platform for a furniture retailer.</p>
-                            <a class="link-body" href="./work-single.html">View Project</a>
-                        </div>
-                    </div>
-                    <!-- / Single Work -->
-                    <!-- Single Work-->
-                    <div 
-                    data-scroll
-                    data-scroll-position="bottom" 
-                        class="col-12 col-md-6 fade-in-left"
-                    >
-                        <div class="position-relative">
-                            <a class="link-cover" href="./work-single.html">
-                                <picture>
-                                    <img class="img-fluid" src="./assets/images/project-listing-3.jpg" alt="">
-                                </picture>
-                            </a>
-                            <p class="subtitle-xs mb-0 mt-4"><span class='me-2'>Ecommerce</span> &middot; <span class='ms-2'>Wordpress</span></p>
-                            <p class="fw-bolder lead mb-3 mt-2">Wordpress Grocery Store</p>
-                            <p class="small text-muted mb-2">Design and development of a WooCommerce Ecommerce platform for a grocery platform.</p>
-                            <a class="link-body" href="./work-single.html">View Project</a>
-                        </div>
-                    </div>
-                    <!-- / Single Work -->
-                    <!-- Single Work-->
-                    <div 
-                    data-scroll
-                    data-scroll-position="bottom" 
-                        class="col-12 col-md-6 fade-in-right"
-                    >
-                        <div class="position-relative">
-                            <a class="link-cover" href="./work-single.html">
-                                <picture>
-                                    <img class="img-fluid" src="./assets/images/project-listing-4.jpg" alt="">
-                                </picture>
-                            </a>
-                            <p class="subtitle-xs mb-0 mt-4"><span class='me-2'>Mobile</span> &middot; <span class='ms-2'>React Native</span></p>
-                            <p class="fw-bolder lead mb-3 mt-2">Messaging App</p>
-                            <p class="small text-muted mb-2">Creation of a custom React Native messaging app for a messaging SAAS startup.</p>
-                            <a class="link-body" href="./work-single.html">View Project</a>
-                        </div>
-                    </div>
-                    <!-- / Single Work -->
-                    <!-- Single Work-->
-                    <div 
-                    data-scroll
-                    data-scroll-position="bottom" 
-                        class="col-12 col-md-6 fade-in-left"
-                    >
-                        <div class="position-relative">
-                            <a class="link-cover" href="./work-single.html">
-                                <picture>
-                                    <img class="img-fluid" src="./assets/images/project-listing-5.jpg" alt="">
-                                </picture>
-                            </a>
-                            <p class="subtitle-xs mb-0 mt-4"><span class='me-2'>Ecommerce</span> &middot; <span class='ms-2'>Shopify</span></p>
-                            <p class="fw-bolder lead mb-3 mt-2">Shopify Online Store</p>
-                            <p class="small text-muted mb-2">Design and development of a custom Shopify Ecommerce platform for a car retailer.</p>
-                            <a class="link-body" href="./work-single.html">View Project</a>
-                        </div>
-                    </div>
-                    <!-- / Single Work -->
-                    <!-- Single Work-->
-                    <div 
-                    data-scroll
-                    data-scroll-position="bottom" 
-                        class="col-12 col-md-6 fade-in-right"
-                    >
-                        <div class="position-relative">
-                            <a class="link-cover" href="./work-single.html">
-                                <picture>
-                                    <img class="img-fluid" src="./assets/images/project-listing-6.jpg" alt="">
-                                </picture>
-                            </a>
-                            <p class="subtitle-xs mb-0 mt-4"><span class='me-2'>Ecommerce</span> &middot; <span class='ms-2'>Magento</span></p>
-                            <p class="fw-bolder lead mb-3 mt-2">Magento Online Store</p>
-                            <p class="small text-muted mb-2">Design and development of a custom Magento Ecommerce platform for a pet food retailer.</p>
-                            <a class="link-body" href="./work-single.html">View Project</a>
-                        </div>
-                    </div>
-                    <!-- / Single Work -->
-                    <!-- Single Work-->
-                    <div 
-                    data-scroll
-                    data-scroll-position="bottom" 
-                        class="col-12 col-md-6 fade-in-left"
-                    >
-                        <div class="position-relative">
-                            <a class="link-cover" href="./work-single.html">
-                                <picture>
-                                    <img class="img-fluid" src="./assets/images/project-listing-7.jpg" alt="">
-                                </picture>
-                            </a>
-                            <p class="subtitle-xs mb-0 mt-4"><span class='me-2'>Ecommerce</span> &middot; <span class='ms-2'>Wordpress</span></p>
-                            <p class="fw-bolder lead mb-3 mt-2">Web Application</p>
-                            <p class="small text-muted mb-2">Design and development of a custom WooCommerce Ecommerce platform for a furniture retailer.</p>
-                            <a class="link-body" href="./work-single.html">View Project</a>
-                        </div>
-                    </div>
-                    <!-- / Single Work -->
-                    <!-- Single Work-->
-                    <div 
-                    data-scroll
-                    data-scroll-position="bottom" 
-                        class="col-12 col-md-6 fade-in-right"
+                        class="col-12 col-md-6 fade-in-left project Development ComputerSecurity"
+                        id="project9"
                     >
                         <div class="position-relative">
                             <a class="link-cover" href="./work-single.html">
@@ -241,13 +149,254 @@
                                     <img class="img-fluid" src="./assets/images/project-listing-8.jpg" alt="">
                                 </picture>
                             </a>
-                            <p class="subtitle-xs mb-0 mt-4"><span class='me-2'>Ecommerce</span> &middot; <span class='ms-2'>Shopify</span></p>
-                            <p class="fw-bolder lead mb-3 mt-2">Ecommerce Marketing</p>
-                            <p class="small text-muted mb-2">Design and development of a custom Shopify Ecommerce platform for a fashion retailer.</p>
+                            <p class="subtitle-xs mb-0 mt-4"><span class='me-2'>Development</span> &middot; <span class='ms-2'>UX/UI</span></p>
+                            <p class="fw-bolder lead mb-3 mt-2">Poisera</p>
+                            <p class="small text-muted mb-2">Design and fullstack development of a V0 app, including an AI chatbot, for a mental health platform for parents.</p>
+                            <a class="link-body" href="./work-single.html">View Projects</a>
+                        </div>
+                    </div> -->
+                    <!-- / Single Work -->
+
+
+                    <!-- Single Work - Atomic Object-->
+                    <!-- <div 
+                    data-scroll
+                    data-scroll-position="bottom" 
+                        class="col-12 col-md-6 fade-in-right project Design UX/UI Development"
+                        id="project8"
+                    >
+                        <div class="position-relative">
+                            <a class="link-cover" href="./work-single.html"> 
+                                <picture>
+                                    <img class="img-fluid" src="./assets/images/project-listing-8.jpg" alt="">
+                                </picture>
+                            </a> 
+                            <p class="subtitle-xs mb-0 mt-4"><span class='me-2'>Development</span> &middot; <span class='ms-2'>UX/UI</span></p>
+                            <p class="fw-bolder lead mb-3 mt-2">Atomic Object</p>
+                            <p class="small text-muted mb-2">Design and fullstack development of remodeled tech stack for one of Atomic's clients.</p>
                             <a class="link-body" href="./work-single.html">View Project</a>
+                        </div>
+                    </div> -->
+                    <!-- / Single Work -->
+
+                    <!-- Single Work - AI: Chess-->
+                    <div 
+                    data-scroll
+                    data-scroll-position="bottom" 
+                        class="col-12 col-md-6 fade-in-left project AI Development"
+                        id="project5"
+                    >
+                        <div class="position-relative">
+                            <!-- <a class="link-cover" href="./work-single.html"> -->
+                                <picture>
+                                    <img class="img-fluid" src="./assets/images/chessAI.png" alt="">
+                                </picture>
+                            <!-- </a> -->
+                            <p class="subtitle-xs mb-0 mt-4"><span class='me-2'>AI</span> &middot; <span class='ms-2'>Development</span></p>
+                            <p class="fw-bolder lead mb-3 mt-2">Chess AI</p>
+                            <p class="small text-muted mb-2">Development of a Minimax AI with AB pruning to predict a set of moves to maximize chance of winning a chess game.</p>
+                            <a class="link-body" href="./listing-chess.html">View Project</a>
                         </div>
                     </div>
                     <!-- / Single Work -->
+
+                    <!-- Single Work - Videogame: LOZ remake-->
+                    <div 
+                    data-scroll
+                    data-scroll-position="bottom" 
+                        class="col-12 col-md-6 fade-in-right project Videogame Development"
+                        id="project6"
+                    >
+                        <div class="position-relative">
+                            <!-- <a class="link-cover" href="./work-single.html"> -->
+                                <picture>
+                                    <img class="img-fluid" src="./assets/images/LOZ-cover.png" alt="">
+                                </picture>
+                            <!-- </a> -->
+                            <p class="subtitle-xs mb-0 mt-4"><span class='me-2'>Videogame</span> &middot; <span class='ms-2'>Development</span></p>
+                            <p class="fw-bolder lead mb-3 mt-2">Legend of Zelda Remake</p>
+                            <p class="small text-muted mb-2">Development of a Legend of Zelda (for the NES) remake with a custom level.</p>
+                            <a class="link-body" href="./listing-LOZ.html">View Project</a>
+                        </div>
+                    </div>
+                    <!-- / Single Work -->
+
+                    
+
+                    <!-- Single Work - DNEP: ZTW-->
+                    <div 
+                    data-scroll
+                    data-scroll-position="bottom" 
+                        class="col-12 col-md-6 fade-in-left project Design UX/UI"
+                        id="project3"
+                    >
+                        <div class="position-relative">
+                            <!-- <a class="link-cover" href="./work-single.html"> -->
+                                <picture>
+                                    <img class="img-fluid" src="./assets/images/ZTW-cover.png" alt="">
+                                </picture>
+                            <!-- </a> -->
+                            <p class="subtitle-xs mb-0 mt-4"><span class='me-2'>UX/UI</span> &middot; <span class='ms-2'>Graphic Design</span></p>
+                            <p class="fw-bolder lead mb-3 mt-2">Detroit Neighborhood Entrepreneur Project</p>
+                            <p class="small text-muted mb-2">Designed and rebranded a logo, color palette, website, and app for fashion platform Zero To Wear.</p>
+                            <a class="link-body" href="./listing-ZTW.html">View Project</a>
+                        </div>
+                    </div>
+                    <!-- / Single Work -->
+
+
+                    <!-- Single Work - CWRU -->
+                    <div 
+                    data-scroll
+                    data-scroll-position="bottom" 
+                        class="col-12 col-md-6 fade-in-right project Design"
+                        id="project8"
+                    >
+                        <div class="position-relative">
+                            <!-- <a class="link-cover" href="./work-single.html"> -->
+                                <picture>
+                                    <img class="img-fluid" src="./assets/images/cwru-back.jpeg" alt="">
+                                </picture>
+                            <!-- </a> -->
+                            <p class="subtitle-xs mb-0 mt-4"><span class='me-2'>Graphic Design</span></p>
+                            <p class="fw-bolder lead mb-3 mt-2">Desigins for Case Western Reserve University, Delta Sigma Delta Lambda Chapter</p>
+                            <p class="small text-muted mb-2">Design of several clothing items for a dental school fraternity led by my sister!</p>
+                            <a class="link-body" href="./listing-CWRU-design.html">View Project</a>
+                        </div>
+                    </div>
+                    <!-- / Single Work -->
+
+                    <!-- Single Work - Videogame: SHADOWLAB-->
+                    <div 
+                    data-scroll
+                    data-scroll-position="bottom" 
+                        class="col-12 col-md-6 fade-in-left project Videogame Development Design"
+                        id="project1"
+                    >
+                        <div class="position-relative">
+                            
+                            <picture>
+                                <img class="img-fluid" src="./assets/images/shadowlab.png" alt="">
+                            </picture>
+                            
+                            <p class="subtitle-xs mb-0 mt-4"><span class='me-2'>Videogame</span> &middot; <span class='me-2 ms-2'>Development</span> &middot; <span class='ms-2'>Design</span></p>
+                            <p class="fw-bolder lead mb-3 mt-2">ShadowLab Videogame</p>
+                            <p class="small text-muted mb-2">Design and development of a custom videogame for a college game development course.</p>
+                            <a class="link-body" href="./listing-shadow-lab.html">View Project</a>
+                        </div>
+                    </div>
+                    <!-- / Single Work -->
+
+                    <!-- Single Work - Videogame: Sporeshroom-->
+                    <div 
+                    data-scroll
+                    data-scroll-position="bottom" 
+                        class="col-12 col-md-6 fade-in-right project Videogame Development"
+                        id="project4"
+                    >
+                        <div class="position-relative">
+                            <!-- <a class="link-cover" href="./work-single.html"> -->
+                                <picture>
+                                    <img class="img-fluid" src="./assets/images/sporeshroom.png" alt="">
+                                </picture>
+                            <!-- </a> -->
+                            <p class="subtitle-xs mb-0 mt-4"><span class='me-2'>Videogame</span> &middot; <span class='ms-2'>Development</span></p>
+                            <p class="fw-bolder lead mb-3 mt-2">SporeShroom</p>
+                            <p class="small text-muted mb-2">Rapid development of a videogame in 2 weeks for a college videogame course.</p>
+                            <a class="link-body" href="./listing-sporeshroom.html">View Project</a>
+                        </div>
+                    </div>
+                    <!-- / Single Work -->
+
+                    <!-- Single Work - 3d model-->
+                    <!-- <div 
+                    data-scroll
+                    data-scroll-position="bottom" 
+                        class="col-12 col-md-6 fade-in-left project Videogame Development Design"
+                        id="project1"
+                    >
+                        <div class="position-relative">
+                            
+                            <picture>
+                                <img class="img-fluid" src="./assets/images/shadowlab.png" alt="">
+                            </picture>
+                            
+                            <p class="subtitle-xs mb-0 mt-4"><span class='me-2'>Design</span> &middot; <span class='ms-2'>3D Modeling</span></p>
+                            <p class="fw-bolder lead mb-3 mt-2">3D Concept Model</p>
+                            <p class="small text-muted mb-2">Design and modeling of a 3D environment based around some aesthetic.</p>
+                            <a class="link-body" href="./listing-model.html">View Project</a>
+                        </div>
+                    </div> -->
+                    <!-- / Single Work -->
+
+                    <!-- Single Work - Computer Security-->
+                    <!-- <div 
+                    data-scroll
+                    data-scroll-position="bottom" 
+                        class="col-12 col-md-6 fade-in-left project Development ComputerSecurity"
+                        id="project9"
+                    >
+                        <div class="position-relative">
+                            <a class="link-cover" href="./work-single.html">
+                                <picture>
+                                    <img class="img-fluid" src="./assets/images/project-listing-8.jpg" alt="">
+                                </picture>
+                            </a>
+                            <p class="subtitle-xs mb-0 mt-4"><span class='me-2'>Development</span> &middot; <span class='ms-2'>Computer Security</span></p>
+                            <p class="fw-bolder lead mb-3 mt-2">5 Computer Security Projects</p>
+                            <p class="small text-muted mb-2">Development of a range of projects hacking and protecting platforms, including Crypto, Websites, Networks, Applications, and Computer Forensics.</p>
+                            <a class="link-body" href="./work-single.html">View Projects</a>
+                        </div>
+                    </div> -->
+                    <!-- / Single Work -->
+
+
+                    
+
+                    <!-- Single Work - AI: Hw1-->
+                    <!-- <div 
+                    data-scroll
+                    data-scroll-position="bottom" 
+                        class="col-12 col-md-6 fade-in-left project AI Development"
+                        id="project7"
+                    >
+                        <div class="position-relative">
+                            <a class="link-cover" href="./work-single.html">
+                                <picture>
+                                    <img class="img-fluid" src="./assets/images/project-listing-7.jpg" alt="">
+                                </picture>
+                            </a>
+                            <p class="subtitle-xs mb-0 mt-4"><span class='me-2'>AI</span> &middot; <span class='ms-2'>Development</span></p>
+                            <p class="fw-bolder lead mb-3 mt-2">Common AI Algorithms</p>
+                            <p class="small text-muted mb-2">Development of a 4 common AI algorithms, including BFS, DFS, UCS, and A*.</p>
+                            <a class="link-body" href="./work-single.html">View Project</a>
+                        </div>
+                    </div> -->
+                    <!-- / Single Work -->
+
+                    <!-- Single Work - AI HW3: MDP-->
+                    <!-- <div 
+                    data-scroll
+                    data-scroll-position="bottom" 
+                        class="col-12 col-md-6 fade-in-right project AI Development"
+                        id="project2"
+                    >
+                        <div class="position-relative">
+                            
+                            <picture>
+                                <img class="img-fluid" src="./assets/images/project-listing-2.jpg" alt="">
+                            </picture>
+                            
+                            <p class="subtitle-xs mb-0 mt-4"><span class='me-2'>AI</span> &middot; <span class='ms-2'>Development</span></p>
+                            <p class="fw-bolder lead mb-3 mt-2">Markov Decision Process using Value Iteration</p>
+                            <p class="small text-muted mb-2">Development of an AI agent to predict the best path through an inputted maze for a college AI course.</p>
+                            
+                            <a class="link-body" href="./work-single.html">View Project</a>
+                        </div>
+                    </div> -->
+                    <!-- / Single Work -->
+
+                    
             </div>
 
             <!-- /Page Content -->
@@ -263,7 +412,7 @@
         
         <footer class="border-top mt-10 pt-5 pb-8  " data-scroll-section>
         <div class="container d-flex justify-content-between">
-            <p class="small">All rights reserved. © Jenny Smith 2021. Template created by <a class="link-body" href="https://www.pixelrocket.store">Pixel Rocket</a></p>
+            <p class="small">All rights reserved. © Vanessa Ryan 2024. Template created by <a class="link-body" href="https://www.pixelrocket.store">Pixel Rocket</a></p>
             <ul class="list-unstyled d-flex align-items-center">
                 <li class="ms-3"><a class="text-decoration-none text-muted" href="#"><i class="ri-github-fill"></i></a></li>
                 <li class="ms-3"><a class="text-decoration-none text-muted" href="#"><i class="ri-facebook-fill"></i></a></li>
@@ -282,6 +431,34 @@
     
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
+
+    <!-- JS Filtering -->
+    <script>
+        function filterProjects(category) {
+            const projectsContainer = document.getElementById('projects-container');
+            const projects = projectsContainer.querySelectorAll('.project');
+
+            projects.forEach(project => {
+                if (category === 'all' || project.classList.contains(category)) {
+                    project.classList.remove('hidden');
+                } else {
+                    project.classList.add('hidden');
+                }
+            });
+
+            // Update Locomotive Scroll after DOM changes
+            if (window.locoScroll) {
+                window.locoScroll.update();
+            } else {
+                // Re-initialize Locomotive Scroll if it's not initialized
+                window.locoScroll = new LocomotiveScroll({
+                    el: projectsContainer,
+                    smooth: true
+                    // Add other options as needed
+                });
+            }
+        }
+    </script>
 </body>
 
 </html>
