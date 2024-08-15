@@ -42,6 +42,24 @@
     </style>
   </noscript>
 
+  <!--Email Functionality-->
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init({
+          publicKey: "pRtbN9g-LzmbMu2Gl",
+          limitRate: {
+            // Set the limit rate for the application
+            id: 'app',
+            // Allow 1 request per 10s
+            throttle: 10000,
+          },
+        });
+    })();
+  </script>
+
   <!-- Page Title -->
   <title>Vanessa Ryan's Portfolio</title>
 
@@ -112,67 +130,70 @@
                 <h4 class="subtitle-sm mt-8 mb-4">Send Me A Message</h4>
 
                 <!-- Contact Form-->
-                <form>
+                <form id="contact-form">
                     <div class="row g-5">
 
                         <div class="col-12 col-xl-7">
                             <div class="row g-5">
                                 <!-- Name-->
                                 <div class="col-12 col-md-6">
-                                    <label class="form-label">Your Name</label>
-                                    <input type="text" class="form-control" name="name" placeholder="John Doe">
+                                    <label class="form-label" for="name-input">Your Name</label>
+                                    <input id="name-input" type="text" class="form-control" name="name" placeholder="John Doe" autocomplete="name">
                                 </div>
                                 <!-- / Name-->
 
                                 <!-- Email-->
                                 <div class="col-12 col-md-6">
-                                    <label class="form-label">Your Email Adress</label>
-                                    <input type="email" class="form-control" name="email" placeholder="john@doe.com">
+                                    <label class="form-label" for="email-input">Your Email Adress</label>
+                                    <input id="email-input" type="email" class="form-control" name="email" placeholder="john@doe.com" autocomplete="email">
                                 </div>
                                 <!-- / Email-->
 
                                 <!-- Company Name-->
                                 <div class="col-12 col-md-6">
-                                    <label class="form-label">Your Company</label>
-                                    <input type="text" class="form-control" name="company" placeholder="ACME Limited">
+                                    <label class="form-label" for="company-input">Your Company</label>
+                                    <input id="company-input" type="text" class="form-control" name="company" placeholder="ACME Limited" autocomplete="organization">
                                 </div>
                                 <!-- / Company Name-->
 
                                 <!-- Telephone-->
                                 <div class="col-12 col-md-6">
-                                    <label class="form-label">Your Telephone</label>
-                                    <input type="text" class="form-control" name="telephone"
-                                        placeholder="+44 (0)208 445 678">
+                                    <label class="form-label" for="tel-input">Your Telephone</label>
+                                    <input id="tel-input" type="text" class="form-control" name="telephone" placeholder="+1 (234) 567 8900" autocomplete="tel">
                                 </div>
                                 <!-- / Telephone-->
 
                                 <!-- Service Type-->
                                 <div class="col-12">
-                                    <label class="form-label d-block">What Service Do You Require?</label>
+                                    <label class="form-label d-block" for="webappdev">What Service Do You Require?</label>
                                     <div class="d-flex align-items-center flex-wrap">
                                         <div class="form-check-custom me-2 mb-2">
-                                            <input class="form-check-input-custom" type="checkbox" id="shopify">
-                                            <label class="form-check-custom-label" for="shopify">Shopify</label>
+                                            <input class="form-check-input-custom" type="checkbox" id="webappdev">
+                                            <label class="form-check-custom-label" for="webappdev">Web/App Development</label>
                                         </div>
                                         <div class="form-check-custom me-2 mb-2">
-                                            <input class="form-check-input-custom" type="checkbox" id="wordpress">
-                                            <label class="form-check-custom-label" for="wordpress">Wordpress</label>
+                                            <input class="form-check-input-custom" type="checkbox" id="Videogamedev">
+                                            <label class="form-check-custom-label" for="Videogamedev">Video Game Development</label>
+                                          </div>
+                                        <div class="form-check-custom me-2 mb-2">
+                                            <input class="form-check-input-custom" type="checkbox" id="AIdev">
+                                            <label class="form-check-custom-label" for="AIdev">AI Development</label>
                                         </div>
                                         <div class="form-check-custom me-2 mb-2">
-                                            <input class="form-check-input-custom" type="checkbox" id="magento">
-                                            <label class="form-check-custom-label" for="magento">Magento</label>
+                                          <input class="form-check-input-custom" type="checkbox" id="compsecurity">
+                                          <label class="form-check-custom-label" for="compsecurity">Computer Security</label>
+                                      </div>
+                                        <div class="form-check-custom me-2 mb-2">
+                                            <input class="form-check-input-custom" type="checkbox" id="uxui">
+                                            <label class="form-check-custom-label" for="uxui">UX/UI Design</label>
                                         </div>
                                         <div class="form-check-custom me-2 mb-2">
-                                            <input class="form-check-input-custom" type="checkbox" id="design">
-                                            <label class="form-check-custom-label" for="design">Web Design</label>
+                                          <input class="form-check-input-custom" type="checkbox" id="graphics">
+                                          <label class="form-check-custom-label" for="graphics">Graphic Design</label>
                                         </div>
                                         <div class="form-check-custom me-2 mb-2">
-                                            <input class="form-check-input-custom" type="checkbox" id="uxdesign">
-                                            <label class="form-check-custom-label" for="uxdesign">UX Design</label>
-                                        </div>
-                                        <div class="form-check-custom me-2 mb-2">
-                                            <input class="form-check-input-custom" type="checkbox" id="custom">
-                                            <label class="form-check-custom-label" for="custom">Custom</label>
+                                            <input class="form-check-input-custom" type="checkbox" id="other">
+                                            <label class="form-check-custom-label" for="other">Other</label>
                                         </div>
                                     </div>
                                 </div>
@@ -180,9 +201,9 @@
 
                                 <!-- Project Information-->
                                 <div class="col-12">
-                                    <label class="form-label">Tell Me About Your Project</label>
-                                    <textarea name="about" class="form-control" cols="30" rows="12"
-                                        placeholder="Hi Jenny, I would like to talk about the design and build of a custom Ecommerce platform that uses the Shopify API and React.js frontend..."></textarea>
+                                    <label class="form-label" for="about">Tell Me About Your Project</label>
+                                    <textarea id="about" name="about" class="form-control" cols="30" rows="12"
+                                        placeholder="Hi Vanessa, I would like to talk about..."></textarea>
                                 </div>
                                 <!-- / Project Information-->
 
@@ -226,6 +247,73 @@
     
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
+
+    <!-- Email Functionality -->
+    <script>
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        // event.preventDefault(); // Prevent form from submitting the default way
+        document.querySelector('button[type="submit"]').disabled = true;
+        console.log("debug1");
+
+        // var nameElement = document.querySelector('input[name="name"]');
+        // var emailElement = document.querySelector('input[name="email"]');
+        // var companyElement = document.querySelector('input[name="company"]');
+        // var telephoneElement = document.querySelector('input[name="telephone"]');
+        // var aboutElement = document.querySelector('textarea[name="about"]');
+
+        // console.log("Name Element: ", nameElement);
+        // console.log("Email Element: ", emailElement);
+        // console.log("Company Element: ", companyElement);
+        // console.log("Telephone Element: ", telephoneElement);
+        // console.log("About Element: ", aboutElement);
+
+        // Collect the form data
+        var name = document.querySelector('input[name="name"]').value || 'empty';
+        var email = document.querySelector('input[name="email"]').value || 'empty';
+        var company = document.querySelector('input[name="company"]').value || 'empty';
+        var telephone = document.querySelector('input[name="telephone"]').value || 'empty';
+        var about = document.querySelector('textarea[name="about"]').value || 'empty';
+
+        console.log("debug2");
+        console.log("name: " + name);
+        console.log("email: " + email);
+        console.log("comp: " + company);
+        console.log("tel: " + telephone);
+        console.log("about: " + about);
+
+        // Collect the service checkboxes
+        var services = [];
+        document.querySelectorAll('.form-check-input-custom:checked').forEach(function(checkbox) {
+            services.push(checkbox.nextElementSibling.innerText);
+        });
+        services = services.length > 0 ? services.join(', ') : 'empty';
+
+        console.log("debug3");
+        console.log("services: " + services);
+
+        // Send email using EmailJS
+        emailjs.send("service_bejs19r","template_phbdmyb",{
+          folio_name: "Vanessa's Portfolio",
+          name: name,
+          email: email,
+          company: company,
+          phone: telephone,
+          service: services,
+          message: about,
+        }).then(function(response) {
+          document.getElementById('contact-form').reset();
+          document.querySelector('button[type="submit"]').disabled = false; // Re-enable button
+          console.log("debug4: success" + response.json);
+          alert('Message sent successfully!');
+        }, function(error) {
+          document.querySelector('button[type="submit"]').disabled = false; // Re-enable button
+          console.log("debug5: failure: " + error);
+          console.log(error.json);
+          alert('Failed to send message. Please try again.');
+        });
+      });
+  </script>
+  
 </body>
 
 </html>
