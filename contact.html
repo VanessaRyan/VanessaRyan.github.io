@@ -301,15 +301,15 @@
           service: services,
           message: about,
         }).then(function(response) {
+          alert('Message sent successfully!');
           document.getElementById('contact-form').reset();
           document.querySelector('button[type="submit"]').disabled = false; // Re-enable button
           console.log("debug4: success" + response.json);
-          alert('Message sent successfully!');
         }, function(error) {
+          alert('Failed to send message. Please try again.');
           document.querySelector('button[type="submit"]').disabled = false; // Re-enable button
           console.log("debug5: failure: " + error);
           console.log(error.json);
-          alert('Failed to send message. Please try again.');
         });
       });
   </script>
